@@ -1,0 +1,29 @@
+﻿<div class="container chat-container-footer">
+    <div class="form-group">
+        <textarea class="form-control" name="message" placeholder="Type your message and hit Enter" ng-model="user.message" required></textarea>
+        <span class="error" ng-show="(form.$submitted || form.message.$touched ) && form.message.$error.required">
+            Message is required.
+        </span>
+        <span class="typing-message" id="typestatus">&nbsp;&nbsp;&nbsp;</span>
+    </div>
+    <ul class="user-action">
+        <li><input name="file1" type="file" multiple="" size="1" class="embdinpfile" id="embdfileupload" title="Share Files"><i class="fa fa-paperclip fa-2x" aria-hidden="true"></i></li>
+        <li><i class="fa fa-smile-o fa-2x" aria-hidden="true"></i></li>
+        <li>
+            <i class="fa fa-paper-plane fa-2x fa-rotate-45" aria-hidden="true"></i>
+            <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;" tabindex="-1" />
+        </li>
+    </ul>
+    <div class="smile_list siq-smileys-section req slidetgl_show" id="smilelist" style="display: none;">
+        <div class="smile_sublist smileli_only">
+            <div class="smileli  sel siq-smileys" title="Smile" smilename="smile">
+                <em smilename="smile" class="siqsly-smile siq-smiley-icon"></em>
+                <span smilename="smile" class="txtelips">Smile</span>
+            </div>
+            <div class="smileli  siq-smileys" title="Happy" smilename="happy">
+                <em smilename="happy" class="siqsly-happy siq-smiley-icon"></em>
+                <span smilename="happy" class="txtelips">Happy</span>
+            </div>
+        </div>
+    </div>
+</div>

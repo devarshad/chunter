@@ -1,0 +1,1 @@
+﻿angular.module('chunter', ['services', 'controllers', 'directives', 'filters']);

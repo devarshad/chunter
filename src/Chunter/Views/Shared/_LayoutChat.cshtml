@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Angular/app.js"></script>
+
+    <script src="~/Angular/app.js"></script>
+    <script src="~/Angular/controllers/baseController.js"></script>
+    <script src="~/Angular/app.js"></script>
+    <script src="~/Angular/filters/baseFilter.js"></script>
+    <script src="~/Angular/controllers/baseController.js"></script>
+    <script src="~/Angular/services/baseService.js"></script>
+    <script src="~/Angular/directives/baseDirective.js"></script>
+    <script src="~/Angular/filters/studentFilter.js"></script>
+    <script src="~/Angular/services/studentService.js"></script>
+    <script src="~/Angular/controllers/chatController.js"></script>
+    <script src="~/Angular/directives/studentDirective.js"></script>
+    <script>
+        // Jquery draggable
+        $('#chatter').draggable({
+            handle: ".navbar"
+        });
+    </script>
+</head>
+
+<body ng-app="chunter">
+    <div class="chat-container" ng-controller="chatController">
+        <div class="container chat-container-title">
+            <span class="chat-title-icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></span>
+            <span class="chat-title-tag">Let's talk with us!</span>
+            <span class="chat-minimize" title="Minimize"><i class="fa fa-minus" aria-hidden="true"></i></span>
+        </div>
+        @RenderBody()
+    </div>
+</body>
+</html>
